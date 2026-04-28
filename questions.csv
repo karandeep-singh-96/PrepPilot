@@ -1,0 +1,292 @@
+Company,Role,Topic,Sub-topic,Round,Question
+TechMojo,Business / Data Analyst,SQL,Joins / Aggregation / Window Functions,Technical Round,Write a SQL query to find the rank of a given student by name from a students-marks table.
+TechMojo,Business / Data Analyst,SQL,Joins / Aggregation / Window Functions,Technical Round,"How do you join two tables? Explain INNER, LEFT, RIGHT, FULL OUTER JOIN with examples."
+TechMojo,Business / Data Analyst,SQL,Joins / Aggregation / Window Functions,Technical Round,What is the difference between WHERE and HAVING? When would you use each?
+TechMojo,Business / Data Analyst,SQL,Joins / Aggregation / Window Functions,Technical Round,"Write a query using ROW_NUMBER(), RANK(), DENSE_RANK() to rank employees by salary within each department."
+TechMojo,Business / Data Analyst,SQL,Joins / Aggregation / Window Functions,Technical Round,Write a query to find the second-highest salary in a table without using LIMIT/TOP.
+TechMojo,Business / Data Analyst,SQL,Joins / Aggregation / Window Functions,Technical Round,What is the difference between GROUP BY and PARTITION BY?
+TechMojo,Business / Data Analyst,SQL,Joins / Aggregation / Window Functions,Technical Round,Explain CTEs (Common Table Expressions). Write a CTE to find top 5 products by revenue.
+TechMojo,Business / Data Analyst,SQL,Joins / Aggregation / Window Functions,Technical Round,What are indexes? How would you decide which columns to index on a large orders table?
+TechMojo,Business / Data Analyst,SQL,Joins / Aggregation / Window Functions,Technical Round,What is the difference between UNION and UNION ALL?
+TechMojo,Business / Data Analyst,SQL,Joins / Aggregation / Window Functions,Technical Round,Write a SQL query to calculate month-over-month revenue growth using LAG().
+TechMojo,Business / Data Analyst,SQL,Joins / Aggregation / Window Functions,Technical Round,Find customers who placed orders in both January and February from an orders table.
+TechMojo,Business / Data Analyst,SQL,Joins / Aggregation / Window Functions,Technical Round,Write a query to find duplicate rows in a table and delete them keeping one.
+TechMojo,Business / Data Analyst,SQL,Joins / Aggregation / Window Functions,Technical Round,"Explain the difference between DELETE, TRUNCATE, and DROP."
+TechMojo,Business / Data Analyst,SQL,Joins / Aggregation / Window Functions,Technical Round,"What is database normalization? Explain 1NF, 2NF, 3NF with examples."
+TechMojo,Business / Data Analyst,SQL,Joins / Aggregation / Window Functions,Technical Round,What is the difference between a clustered and non-clustered index?
+TechMojo,Business / Data Analyst,Python,Data Manipulation / Pandas / EDA,Technical Round,"How do you read a CSV, Excel, and SQL table into a pandas DataFrame?"
+TechMojo,Business / Data Analyst,Python,Data Manipulation / Pandas / EDA,Technical Round,"Explain the difference between loc[], iloc[], and at[] in pandas."
+TechMojo,Business / Data Analyst,Python,Data Manipulation / Pandas / EDA,Technical Round,"How do you handle missing values? Compare fillna(), dropna(), interpolate(), and forward-fill."
+TechMojo,Business / Data Analyst,Python,Data Manipulation / Pandas / EDA,Technical Round,Write a function that removes outliers from a DataFrame column using z-score (threshold ±3).
+TechMojo,Business / Data Analyst,Python,Data Manipulation / Pandas / EDA,Technical Round,How do you detect and remove duplicate rows in a pandas DataFrame?
+TechMojo,Business / Data Analyst,Python,Data Manipulation / Pandas / EDA,Technical Round,"Explain merge(), join(), and concat() in pandas. When would you use each?"
+TechMojo,Business / Data Analyst,Python,Data Manipulation / Pandas / EDA,Technical Round,How would you calculate a 7-day rolling average of daily sales in a DataFrame?
+TechMojo,Business / Data Analyst,Python,Data Manipulation / Pandas / EDA,Technical Round,"Write code to group a sales DataFrame by region and product, and find top-3 products per region."
+TechMojo,Business / Data Analyst,Python,Data Manipulation / Pandas / EDA,Technical Round,"What is the difference between apply(), map(), and applymap() in pandas?"
+TechMojo,Business / Data Analyst,Python,Data Manipulation / Pandas / EDA,Technical Round,How would you pivot a long-format DataFrame to wide format? Explain pivot_table() vs pivot().
+TechMojo,Business / Data Analyst,Python,Data Manipulation / Pandas / EDA,Technical Round,"Write a function to perform EDA on a dataset: shape, dtypes, missing %, summary stats, value_counts."
+TechMojo,Business / Data Analyst,Python,Data Manipulation / Pandas / EDA,Technical Round,How would you visualize correlation between numeric features using seaborn/matplotlib?
+TechMojo,Business / Data Analyst,Business Analytics,KPIs / Problem Framing / Reporting,Technical Round,A business stakeholder says 'our revenue dropped 20% last month.' Walk through how you'd investigate this.
+TechMojo,Business / Data Analyst,Business Analytics,KPIs / Problem Framing / Reporting,Technical Round,How do you translate an ambiguous business question into a measurable data problem?
+TechMojo,Business / Data Analyst,Business Analytics,KPIs / Problem Framing / Reporting,Technical Round,Define KPIs you would track for a B2B SaaS product. How would you build a dashboard for these?
+TechMojo,Business / Data Analyst,Business Analytics,KPIs / Problem Framing / Reporting,Technical Round,"What is the difference between descriptive, diagnostic, predictive, and prescriptive analytics?"
+TechMojo,Business / Data Analyst,Business Analytics,KPIs / Problem Framing / Reporting,Technical Round,How would you design a data pipeline from raw event logs to a business-ready dashboard?
+TechMojo,Business / Data Analyst,Business Analytics,KPIs / Problem Framing / Reporting,Technical Round,A report shows two different revenue numbers from two teams. How do you resolve conflicting data?
+TechMojo,Business / Data Analyst,Business Analytics,KPIs / Problem Framing / Reporting,Technical Round,What is a 'single source of truth' and how would you establish one in a growing company?
+TechMojo,Business / Data Analyst,Business Analytics,KPIs / Problem Framing / Reporting,Technical Round,Explain cohort analysis. When and why would you use it?
+TechMojo,Business / Data Analyst,Business Analytics,KPIs / Problem Framing / Reporting,Technical Round,You have a dataset of customer transactions. How would you identify potential churn?
+TechMojo,Business / Data Analyst,Business Analytics,KPIs / Problem Framing / Reporting,Technical Round,How do you prioritize competing requests from 4 business teams when you have capacity for 2?
+TechMojo,Business / Data Analyst,Behavioral,Situational / Cultural Fit,HR Round,"Walk me through your most impactful data/analytics project — problem, approach, and measurable outcome."
+TechMojo,Business / Data Analyst,Behavioral,Situational / Cultural Fit,HR Round,Tell me about a time you had to communicate a complex finding to a non-technical stakeholder.
+TechMojo,Business / Data Analyst,Behavioral,Situational / Cultural Fit,HR Round,Describe a situation where your data analysis led to a business decision being changed.
+TechMojo,Business / Data Analyst,Behavioral,Situational / Cultural Fit,HR Round,How do you stay updated with trends in data analytics and BI tools?
+TechMojo,Business / Data Analyst,Behavioral,Situational / Cultural Fit,HR Round,Why are you making this transition / switching companies? What are you looking for next?
+Authority Entrepreneurs,Backend Developer,Backend Concepts,Databases / APIs / Architecture,Technical Round 1,What is the difference between SQL and NoSQL databases? When would you choose one over the other?
+Authority Entrepreneurs,Backend Developer,Backend Concepts,Databases / APIs / Architecture,Technical Round 1,Explain RESTful API design principles. What makes an API truly RESTful?
+Authority Entrepreneurs,Backend Developer,Backend Concepts,Databases / APIs / Architecture,Technical Round 1,"What are ACID properties? Explain each: Atomicity, Consistency, Isolation, Durability."
+Authority Entrepreneurs,Backend Developer,Backend Concepts,Databases / APIs / Architecture,Technical Round 1,What is the difference between HTTP and HTTPS? How does SSL/TLS work?
+Authority Entrepreneurs,Backend Developer,Backend Concepts,Databases / APIs / Architecture,Technical Round 1,Explain the difference between synchronous and asynchronous programming with a backend example.
+Authority Entrepreneurs,Backend Developer,Backend Concepts,Databases / APIs / Architecture,Technical Round 1,What is a race condition? How do you prevent it using locks or transactions?
+Authority Entrepreneurs,Backend Developer,Backend Concepts,Databases / APIs / Architecture,Technical Round 1,What is the N+1 query problem? How would you resolve it using JOIN or eager loading?
+Authority Entrepreneurs,Backend Developer,Backend Concepts,Databases / APIs / Architecture,Technical Round 1,Explain the difference between authentication and authorization. How do you implement each?
+Authority Entrepreneurs,Backend Developer,Backend Concepts,Databases / APIs / Architecture,Technical Round 1,What is JWT? How does token-based authentication work?
+Authority Entrepreneurs,Backend Developer,Backend Concepts,Databases / APIs / Architecture,Technical Round 1,What is the difference between monolithic and microservices architecture? What are the trade-offs?
+Authority Entrepreneurs,Backend Developer,Backend Concepts,Databases / APIs / Architecture,Technical Round 1,Explain the CAP theorem. Can a distributed system guarantee all three?
+Authority Entrepreneurs,Backend Developer,Backend Concepts,Databases / APIs / Architecture,Technical Round 1,What is database sharding? How does it differ from partitioning and replication?
+Authority Entrepreneurs,Backend Developer,Backend Concepts,Databases / APIs / Architecture,Technical Round 1,How do you handle database connection pooling and why is it important?
+Authority Entrepreneurs,Backend Developer,Backend Concepts,Databases / APIs / Architecture,Technical Round 1,What are database indexes? How do you decide which columns to index?
+Authority Entrepreneurs,Backend Developer,Backend Concepts,Databases / APIs / Architecture,Technical Round 1,"Explain the difference between eager loading, lazy loading, and batch loading in ORM contexts."
+Authority Entrepreneurs,Backend Developer,Security,Auth / API Security / Attack Prevention,Technical Round 1,What is SQL Injection? Show a vulnerable query and explain how to prevent it.
+Authority Entrepreneurs,Backend Developer,Security,Auth / API Security / Attack Prevention,Technical Round 1,What is XSS (Cross-Site Scripting)? How do you prevent it in a backend API?
+Authority Entrepreneurs,Backend Developer,Security,Auth / API Security / Attack Prevention,Technical Round 1,What is CSRF (Cross-Site Request Forgery)? How do you implement CSRF tokens?
+Authority Entrepreneurs,Backend Developer,Security,Auth / API Security / Attack Prevention,Technical Round 1,"Explain OAuth 2.0 flows: Authorization Code, Client Credentials, Implicit."
+Authority Entrepreneurs,Backend Developer,Security,Auth / API Security / Attack Prevention,Technical Round 1,What is Role-Based Access Control (RBAC)? How would you implement it in a REST API?
+Authority Entrepreneurs,Backend Developer,Security,Auth / API Security / Attack Prevention,Technical Round 1,How would you design a login API that remains secure even if the SSL certificate is compromised?
+Authority Entrepreneurs,Backend Developer,Security,Auth / API Security / Attack Prevention,Technical Round 1,What is cyclomatic complexity? How does it relate to code quality and testability?
+Authority Entrepreneurs,Backend Developer,Security,Auth / API Security / Attack Prevention,Technical Round 1,How do you rate-limit an API? Explain token bucket and leaky bucket algorithms.
+Authority Entrepreneurs,Backend Developer,Security,Auth / API Security / Attack Prevention,Technical Round 1,How would you protect a backend API against DDoS attacks?
+Authority Entrepreneurs,Backend Developer,Security,Auth / API Security / Attack Prevention,Technical Round 1,What is CORS? How do you configure it properly for a production API?
+Authority Entrepreneurs,Backend Developer,System Design,Scalability / Architecture / DevOps,Technical Round 2,Design a URL shortener service. Explain your choice of data store and hashing strategy.
+Authority Entrepreneurs,Backend Developer,System Design,Scalability / Architecture / DevOps,Technical Round 2,How would you design an API whose response aggregates data from 3 different microservices?
+Authority Entrepreneurs,Backend Developer,System Design,Scalability / Architecture / DevOps,Technical Round 2,How would you design a scalable notification system using event-driven architecture?
+Authority Entrepreneurs,Backend Developer,System Design,Scalability / Architecture / DevOps,Technical Round 2,"Explain message queues. Compare Kafka, RabbitMQ, and AWS SQS."
+Authority Entrepreneurs,Backend Developer,System Design,Scalability / Architecture / DevOps,Technical Round 2,How do you handle database migrations in production without downtime?
+Authority Entrepreneurs,Backend Developer,System Design,Scalability / Architecture / DevOps,Technical Round 2,What is the difference between horizontal and vertical scaling?
+Authority Entrepreneurs,Backend Developer,System Design,Scalability / Architecture / DevOps,Technical Round 2,"Explain caching strategies: cache-aside, read-through, write-through, write-behind."
+Authority Entrepreneurs,Backend Developer,System Design,Scalability / Architecture / DevOps,Technical Round 2,How do you implement idempotency in a payment processing API?
+Authority Entrepreneurs,Backend Developer,System Design,Scalability / Architecture / DevOps,Technical Round 2,Design a logging and monitoring strategy for a production backend service.
+Authority Entrepreneurs,Backend Developer,System Design,Scalability / Architecture / DevOps,Technical Round 2,Describe your CI/CD pipeline. What tools have you used and how do you handle rollbacks?
+Authority Entrepreneurs,Backend Developer,DSA,Arrays / Linked Lists / Math,Coding Round,Detect a cycle in a singly linked list.
+Authority Entrepreneurs,Backend Developer,DSA,Arrays / Linked Lists / Math,Coding Round,Find the missing number in an array of 1 to N.
+Authority Entrepreneurs,Backend Developer,DSA,Arrays / Linked Lists / Math,Coding Round,"Write a function to compute power(a, b) in O(log b) using binary exponentiation."
+Authority Entrepreneurs,Backend Developer,DSA,Arrays / Linked Lists / Math,Coding Round,Sort a string of space-separated numbers in ascending order by the digit sum.
+Authority Entrepreneurs,Backend Developer,DSA,Arrays / Linked Lists / Math,Coding Round,"Given N integers, find the maximum number of chunks where max(chunk[i]) < min(chunk[i+1])."
+Authority Entrepreneurs,Backend Developer,Behavioral,Situational / Cultural Fit,HR Round,Tell me about a complex backend bug you debugged. What was your step-by-step process?
+Authority Entrepreneurs,Backend Developer,Behavioral,Situational / Cultural Fit,HR Round,Describe a time you had to refactor legacy code without breaking production.
+Authority Entrepreneurs,Backend Developer,Behavioral,Situational / Cultural Fit,HR Round,How do you collaborate with frontend developers and product managers to define API contracts?
+Authority Entrepreneurs,Backend Developer,Behavioral,Situational / Cultural Fit,HR Round,Describe a time you made a high-stakes decision under pressure with limited information.
+Authority Entrepreneurs,Backend Developer,Behavioral,Situational / Cultural Fit,HR Round,How do you keep yourself up to date with the latest backend technologies and security practices?
+Authority Entrepreneurs,Data Analyst,SQL,Window Functions / Aggregation / Schema,Technical Round,"Write a query to find customers who placed orders in the last 30 days, ranked by total revenue."
+Authority Entrepreneurs,Data Analyst,SQL,Window Functions / Aggregation / Schema,Technical Round,Find the top 3 products by revenue in each category using window functions.
+Authority Entrepreneurs,Data Analyst,SQL,Window Functions / Aggregation / Schema,Technical Round,Write a query to calculate a 7-day rolling average of daily orders.
+Authority Entrepreneurs,Data Analyst,SQL,Window Functions / Aggregation / Schema,Technical Round,Identify users who placed their first order in January and returned in February — retention rate.
+Authority Entrepreneurs,Data Analyst,SQL,Window Functions / Aggregation / Schema,Technical Round,Write a query to find months with revenue higher than the previous month using LAG().
+Authority Entrepreneurs,Data Analyst,SQL,Window Functions / Aggregation / Schema,Technical Round,Identify duplicate customer records based on email; keep only the most recent.
+Authority Entrepreneurs,Data Analyst,SQL,Window Functions / Aggregation / Schema,Technical Round,Write a query to produce a sales report pivoted by quarter per product.
+Authority Entrepreneurs,Data Analyst,SQL,Window Functions / Aggregation / Schema,Technical Round,Explain the difference between correlated and non-correlated subqueries.
+Authority Entrepreneurs,Data Analyst,SQL,Window Functions / Aggregation / Schema,Technical Round,Write a query to find the second purchase date for each customer using LAG() or subqueries.
+Authority Entrepreneurs,Data Analyst,SQL,Window Functions / Aggregation / Schema,Technical Round,What is the difference between a star schema and a snowflake schema?
+Authority Entrepreneurs,Data Analyst,Statistics,Descriptive / Hypothesis Testing / Regression,Technical Round,"What is the difference between mean, median, and mode? When is median preferable over mean?"
+Authority Entrepreneurs,Data Analyst,Statistics,Descriptive / Hypothesis Testing / Regression,Technical Round,Explain p-value and statistical significance. How do you interpret a p-value of 0.03?
+Authority Entrepreneurs,Data Analyst,Statistics,Descriptive / Hypothesis Testing / Regression,Technical Round,What is A/B testing? How would you design one to evaluate a new landing page?
+Authority Entrepreneurs,Data Analyst,Statistics,Descriptive / Hypothesis Testing / Regression,Technical Round,What is the difference between Type I error (false positive) and Type II error (false negative)?
+Authority Entrepreneurs,Data Analyst,Statistics,Descriptive / Hypothesis Testing / Regression,Technical Round,Explain confidence intervals. How is a 95% CI different from a 99% CI?
+Authority Entrepreneurs,Data Analyst,Statistics,Descriptive / Hypothesis Testing / Regression,Technical Round,What is the difference between correlation and causation? Give a spurious correlation example.
+Authority Entrepreneurs,Data Analyst,Statistics,Descriptive / Hypothesis Testing / Regression,Technical Round,What are outliers? How do you detect them using z-score and IQR? When do you remove them?
+Authority Entrepreneurs,Data Analyst,Statistics,Descriptive / Hypothesis Testing / Regression,Technical Round,Explain the Central Limit Theorem. Why is it important for hypothesis testing?
+Authority Entrepreneurs,Data Analyst,Statistics,Descriptive / Hypothesis Testing / Regression,Technical Round,What is linear regression? What assumptions does it make? How do you validate them?
+Flipkart,Data Analyst,SQL,Joins / Aggregation / NULL Handling,Technical Round 1,How do you concatenate two strings in SQL? Write an example.
+Flipkart,Data Analyst,SQL,Joins / Aggregation / NULL Handling,Technical Round 1,"What are the different types of SQL commands? Explain DDL, DML, DCL, TCL."
+Flipkart,Data Analyst,SQL,Joins / Aggregation / NULL Handling,Technical Round 1,How do you join two tables? Explain each JOIN type with an e-commerce scenario.
+Flipkart,Data Analyst,SQL,Joins / Aggregation / NULL Handling,Technical Round 1,What is a pivot table in SQL? Write a query to pivot monthly sales by category.
+Flipkart,Data Analyst,SQL,Joins / Aggregation / NULL Handling,Technical Round 1,Write a query to find the second-highest salary from an employee table without LIMIT.
+Flipkart,Data Analyst,SQL,Joins / Aggregation / NULL Handling,Technical Round 1,Write a query using LEFT JOIN to find customers who have never placed an order.
+Flipkart,Data Analyst,SQL,Joins / Aggregation / NULL Handling,Technical Round 1,Explain NULL in SQL. How does NULL behave in WHERE conditions and aggregate functions?
+Flipkart,Data Analyst,SQL,Joins / Aggregation / NULL Handling,Technical Round 1,Write a query to count the number of orders per customer in the last 90 days.
+Flipkart,Data Analyst,SQL,Joins / Aggregation / NULL Handling,Technical Round 1,"What is the difference between COUNT(*), COUNT(column), and COUNT(DISTINCT column)?"
+Flipkart,Data Analyst,SQL,Joins / Aggregation / NULL Handling,Technical Round 1,Write a query to find the top 5 selling products by total revenue.
+Flipkart,Data Analyst,SQL,Joins / Aggregation / NULL Handling,Technical Round 1,How do you handle NULL values in SQL? Use COALESCE and ISNULL with examples.
+Flipkart,Data Analyst,SQL,Window Functions / Schema Design / KPIs,Technical Round 2,Write a query using RANK() and DENSE_RANK() to rank products by monthly revenue.
+Flipkart,Data Analyst,SQL,Window Functions / Schema Design / KPIs,Technical Round 2,Write a query to find the month-over-month percentage change in GMV using LAG().
+Flipkart,Data Analyst,SQL,Window Functions / Schema Design / KPIs,Technical Round 2,"Design a database schema for Flipkart: Users, Products, Orders, OrderItems, Payments."
+Flipkart,Data Analyst,SQL,Window Functions / Schema Design / KPIs,Technical Round 2,What indexes would you create on an Orders table to speed up customer order history queries?
+Flipkart,Data Analyst,SQL,Window Functions / Schema Design / KPIs,Technical Round 2,Write a query to find customers who purchased in January but not in February (churned users).
+Flipkart,Data Analyst,SQL,Window Functions / Schema Design / KPIs,Technical Round 2,Calculate the repeat purchase rate: % of customers who placed more than one order in a month.
+Flipkart,Data Analyst,SQL,Window Functions / Schema Design / KPIs,Technical Round 2,"Write a query to find the average order value (AOV) per category, excluding orders below Rs 100."
+Flipkart,Data Analyst,SQL,Window Functions / Schema Design / KPIs,Technical Round 2,Write a query for a 30-day cohort retention analysis from a user purchases table.
+Flipkart,Data Analyst,SQL,Window Functions / Schema Design / KPIs,Technical Round 2,Write a query to detect products that sold more than 500 units in a single day.
+Flipkart,Data Analyst,SQL,Window Functions / Schema Design / KPIs,Technical Round 2,Write a query to calculate conversion rate by category from a views + purchases table.
+Flipkart,Data Analyst,SQL,Window Functions / Schema Design / KPIs,Technical Round 2,Explain OLTP vs OLAP. Why does Flipkart's analytics team not query the production database?
+Flipkart,Data Analyst,SQL,Window Functions / Schema Design / KPIs,Technical Round 2,What is a star schema? Design a Flipkart sales data warehouse — fact and dimension tables.
+Flipkart,Data Analyst,Excel / Python,Excel Formulas / Python Basics / Pandas / Visualization,Technical Round 2,What is a variable in Python? Give examples of different data types.
+Flipkart,Data Analyst,Excel / Python,Excel Formulas / Python Basics / Pandas / Visualization,Technical Round 2,What is the difference between a list and a tuple in Python?
+Flipkart,Data Analyst,Excel / Python,Excel Formulas / Python Basics / Pandas / Visualization,Technical Round 2,What is a VLOOKUP? When would you use INDEX-MATCH instead?
+Flipkart,Data Analyst,Excel / Python,Excel Formulas / Python Basics / Pandas / Visualization,Technical Round 2,How do you create a PivotTable in Excel to summarize Flipkart daily sales by category and region?
+Flipkart,Data Analyst,Excel / Python,Excel Formulas / Python Basics / Pandas / Visualization,Technical Round 2,What Excel function concatenates first name and last name columns?
+Flipkart,Data Analyst,Excel / Python,Excel Formulas / Python Basics / Pandas / Visualization,Technical Round 2,How do you use SUMIF and COUNTIF? Give an e-commerce example for each.
+Flipkart,Data Analyst,Excel / Python,Excel Formulas / Python Basics / Pandas / Visualization,Technical Round 2,Explain the difference between absolute and relative cell references in Excel formulas.
+Flipkart,Data Analyst,Excel / Python,Excel Formulas / Python Basics / Pandas / Visualization,Technical Round 2,How would you clean and transform a raw CSV of customer orders in Python (pandas)?
+Flipkart,Data Analyst,Excel / Python,Excel Formulas / Python Basics / Pandas / Visualization,Technical Round 2,Write Python code to identify customers with no purchase in the last 60 days from a DataFrame.
+Flipkart,Data Analyst,Excel / Python,Excel Formulas / Python Basics / Pandas / Visualization,Technical Round 2,How would you visualize weekly sales trends using matplotlib or seaborn?
+Flipkart,Data Analyst,Excel / Python,Excel Formulas / Python Basics / Pandas / Visualization,Technical Round 2,Write a Python function to flag orders where quantity > 2 standard deviations above the mean.
+Flipkart,Data Analyst,Business / Domain,E-commerce KPIs / Case Studies / Supply Chain,Managerial Round,What are the key KPIs you would track for an e-commerce marketplace like Flipkart? Name at least 8.
+Flipkart,Data Analyst,Business / Domain,E-commerce KPIs / Case Studies / Supply Chain,Managerial Round,"How would you measure the success of a new feature (e.g., Buy Now Pay Later) launched on Flipkart?"
+Flipkart,Data Analyst,Business / Domain,E-commerce KPIs / Case Studies / Supply Chain,Managerial Round,Flipkart sees a sudden 30% drop in app sessions on a Thursday. How do you investigate this?
+Flipkart,Data Analyst,Business / Domain,E-commerce KPIs / Case Studies / Supply Chain,Managerial Round,How would you analyze customer behaviour to reduce cart abandonment on Flipkart?
+Flipkart,Data Analyst,Business / Domain,E-commerce KPIs / Case Studies / Supply Chain,Managerial Round,Explain the concept of GMV vs revenue. Why is GMV not the same as Flipkart's actual revenue?
+Flipkart,Data Analyst,Business / Domain,E-commerce KPIs / Case Studies / Supply Chain,Managerial Round,How would you use data to optimize Flipkart's supply chain and reduce delivery delays?
+Flipkart,Data Analyst,Business / Domain,E-commerce KPIs / Case Studies / Supply Chain,Managerial Round,What metrics would you monitor for Flipkart's Big Billion Days sale?
+Flipkart,Data Analyst,Business / Domain,E-commerce KPIs / Case Studies / Supply Chain,Managerial Round,A product category has high views but low conversions. What analysis would you do?
+Flipkart,Data Analyst,Business / Domain,E-commerce KPIs / Case Studies / Supply Chain,Managerial Round,"How would you segment Flipkart's customers using RFM analysis (Recency, Frequency, Monetary)?"
+Flipkart,Data Analyst,Business / Domain,E-commerce KPIs / Case Studies / Supply Chain,Managerial Round,"Analyze a dataset: customer_id, order_date, order_value, return_flag. Identify key insights and anomalies."
+Flipkart,Data Analyst,Behavioral,Situational / Cultural Fit,HR Round,Tell me about yourself and your experience in data analysis.
+Flipkart,Data Analyst,Behavioral,Situational / Cultural Fit,HR Round,Why do you want to join Flipkart?
+Flipkart,Data Analyst,Behavioral,Situational / Cultural Fit,HR Round,Describe a time you used data to influence a key business decision.
+Flipkart,Data Analyst,Behavioral,Situational / Cultural Fit,HR Round,How do you handle conflicting priorities from multiple stakeholders?
+Lognormal Analytics,Data Analyst,SQL,Retention / Cohorts / Advanced Queries,Technical Round,Write a SQL query to detect overlapping subscription periods for the same customer.
+Lognormal Analytics,Data Analyst,SQL,Retention / Cohorts / Advanced Queries,Technical Round,"Find the top 3 customers by lifetime revenue, broken down by quarter using window functions."
+Lognormal Analytics,Data Analyst,SQL,Retention / Cohorts / Advanced Queries,Technical Round,"Write a query to calculate 7-day, 30-day, and 90-day retention from a user_events table."
+Lognormal Analytics,Data Analyst,SQL,Retention / Cohorts / Advanced Queries,Technical Round,"Given ad_impressions and ad_clicks tables, calculate CTR per ad and flag anomalies (CTR > 50%)."
+Lognormal Analytics,Data Analyst,SQL,Retention / Cohorts / Advanced Queries,Technical Round,"Build a monthly cohort table showing Month 0, Month 1, Month 2... retention percentages."
+Lognormal Analytics,Data Analyst,SQL,Retention / Cohorts / Advanced Queries,Technical Round,Write a query to detect days where revenue dropped more than 20% from the prior day.
+Lognormal Analytics,Data Analyst,SQL,Retention / Cohorts / Advanced Queries,Technical Round,Explain the difference between a fact table and a dimension table. Design an analytics warehouse schema.
+Lognormal Analytics,Data Analyst,SQL,Retention / Cohorts / Advanced Queries,Technical Round,What is the difference between a materialized view and a regular view?
+Lognormal Analytics,Data Analyst,SQL,Retention / Cohorts / Advanced Queries,Technical Round,Write a query to find the score closest to a benchmark — handle ties.
+Lognormal Analytics,Data Analyst,SQL,Retention / Cohorts / Advanced Queries,Technical Round,What is denormalization and when would an analytics team intentionally use it?
+Lognormal Analytics,Data Analyst,Statistics,Probability / Hypothesis Testing / Regression,Technical Round,What probability distribution would you use to model call centre call durations? Justify your answer (hint: lognormal).
+Lognormal Analytics,Data Analyst,Statistics,Probability / Hypothesis Testing / Regression,Technical Round,"Explain the difference between univariate, bivariate, and multivariate analysis."
+Lognormal Analytics,Data Analyst,Statistics,Probability / Hypothesis Testing / Regression,Technical Round,"Bayes' Theorem: 1% of people have disease X. A test is 95% accurate. If you test positive, what is the probability you actually have it?"
+Lognormal Analytics,Data Analyst,Statistics,Probability / Hypothesis Testing / Regression,Technical Round,When would you choose a Mann-Whitney U test over a t-test? What makes a test non-parametric?
+Lognormal Analytics,Data Analyst,Statistics,Probability / Hypothesis Testing / Regression,Technical Round,What is multicollinearity? How do you detect and handle it in a regression model?
+Lognormal Analytics,Data Analyst,Statistics,Probability / Hypothesis Testing / Regression,Technical Round,"How do you validate a regression model? Explain R², Adjusted R², RMSE, and MAE."
+Lognormal Analytics,Data Analyst,Statistics,Probability / Hypothesis Testing / Regression,Technical Round,What is the difference between Pearson and Spearman correlation? When would you use each?
+Lognormal Analytics,Data Analyst,Statistics,Probability / Hypothesis Testing / Regression,Technical Round,You run an A/B test and get p=0.04 with n=50 per group. Should you ship the feature? Why or why not?
+Lognormal Analytics,Data Analyst,Statistics,Probability / Hypothesis Testing / Regression,Technical Round,What is the difference between correlation and causation? Give an example of a spurious correlation.
+Lognormal Analytics,Data Analyst,Statistics,Probability / Hypothesis Testing / Regression,Technical Round,Explain confidence intervals. How is a 95% CI interpreted in plain business language?
+Lognormal Analytics,Backend Developer,Python / Backend,ORM / SQLAlchemy / API Design,Technical Round,Explain Python's GIL (Global Interpreter Lock). How does it affect multi-threaded programs?
+Lognormal Analytics,Backend Developer,Python / Backend,ORM / SQLAlchemy / API Design,Technical Round,What is the difference between multiprocessing and multithreading in Python?
+Lognormal Analytics,Backend Developer,Python / Backend,ORM / SQLAlchemy / API Design,Technical Round,How do you use decorators in Python? Write a timing decorator that logs function execution time.
+Lognormal Analytics,Backend Developer,Python / Backend,ORM / SQLAlchemy / API Design,Technical Round,Explain the difference between generators and regular functions. Write a Fibonacci generator.
+Lognormal Analytics,Backend Developer,Python / Backend,ORM / SQLAlchemy / API Design,Technical Round,What is SQLAlchemy? How is it different from raw sqlite3? Show how you'd query a Users table.
+Lognormal Analytics,Backend Developer,Python / Backend,ORM / SQLAlchemy / API Design,Technical Round,How would you use Alembic for database schema migrations in a Python backend?
+Lognormal Analytics,Backend Developer,Python / Backend,ORM / SQLAlchemy / API Design,Technical Round,Explain the difference between Flask and Django. Which would you pick for a lightweight analytics API?
+Lognormal Analytics,Backend Developer,Python / Backend,ORM / SQLAlchemy / API Design,Technical Round,"Write a Python API endpoint (Flask/FastAPI) that accepts JSON, validates it, and inserts into PostgreSQL."
+Lognormal Analytics,Backend Developer,Python / Backend,ORM / SQLAlchemy / API Design,Technical Round,What is an ORM? How does it help prevent SQL injection attacks?
+Lognormal Analytics,Backend Developer,Python / Backend,ORM / SQLAlchemy / API Design,Technical Round,How do you handle bulk inserts efficiently in SQLAlchemy to avoid N+1 performance problems?
+Lognormal Analytics,Backend Developer,Python / Backend,ORM / SQLAlchemy / API Design,Technical Round,What is cyclomatic complexity? Write a complex function and calculate its cyclomatic complexity.
+Lognormal Analytics,Backend Developer,Python / Backend,ORM / SQLAlchemy / API Design,Technical Round,How would you implement a simple caching layer in a Python API using Redis?
+Lognormal Analytics,Backend Developer,Security,XSS / CSRF / Auth / SQL Injection,Technical Round,What is SQL injection? Show a vulnerable Python code snippet and the corrected parameterized version.
+Lognormal Analytics,Backend Developer,Security,XSS / CSRF / Auth / SQL Injection,Technical Round,What is XSS (Cross-Site Scripting)? How do you prevent it in a Python web app?
+Lognormal Analytics,Backend Developer,Security,XSS / CSRF / Auth / SQL Injection,Technical Round,What is CSRF? How do you implement CSRF protection in Django or Flask?
+Lognormal Analytics,Backend Developer,Security,XSS / CSRF / Auth / SQL Injection,Technical Round,Explain OAuth 2.0 and JWT. When would you use each?
+Lognormal Analytics,Backend Developer,Security,XSS / CSRF / Auth / SQL Injection,Technical Round,How do you rate-limit a Python API? Explain the token bucket algorithm.
+Lognormal Analytics,Backend Developer,Security,XSS / CSRF / Auth / SQL Injection,Technical Round,How do you manage secrets and environment variables securely in a Python backend?
+Lognormal Analytics,Full Stack Developer,Full Stack,React / REST / SSR / Performance / Testing,Technical Round,Explain the difference between server-side rendering (SSR) and client-side rendering (CSR).
+Lognormal Analytics,Full Stack Developer,Full Stack,React / REST / SSR / Performance / Testing,Technical Round,What is the difference between REST and GraphQL APIs? What are the trade-offs?
+Lognormal Analytics,Full Stack Developer,Full Stack,React / REST / SSR / Performance / Testing,Technical Round,Explain CORS. How do you configure it to allow only specific origins?
+Lognormal Analytics,Full Stack Developer,Full Stack,React / REST / SSR / Performance / Testing,Technical Round,What is a WebSocket? How does it differ from HTTP polling? Give a real-time use case.
+Lognormal Analytics,Full Stack Developer,Full Stack,React / REST / SSR / Performance / Testing,Technical Round,How does React's virtual DOM work? How does reconciliation differ from actual DOM updates?
+Lognormal Analytics,Full Stack Developer,Full Stack,React / REST / SSR / Performance / Testing,Technical Round,Explain the difference between useState and useEffect in React. Give a data-fetching example.
+Lognormal Analytics,Full Stack Developer,Full Stack,React / REST / SSR / Performance / Testing,Technical Round,How would you implement pagination in both the backend API and the frontend component?
+Lognormal Analytics,Full Stack Developer,Full Stack,React / REST / SSR / Performance / Testing,Technical Round,"Design the architecture for a real-time analytics dashboard (backend, database, caching, frontend)."
+Lognormal Analytics,Full Stack Developer,Full Stack,React / REST / SSR / Performance / Testing,Technical Round,How do you handle authentication in a full-stack app? Explain the JWT flow from login to API call.
+Lognormal Analytics,Full Stack Developer,Full Stack,React / REST / SSR / Performance / Testing,Technical Round,What is lazy loading? How would you implement code splitting in a React app?
+Lognormal Analytics,Full Stack Developer,Full Stack,React / REST / SSR / Performance / Testing,Technical Round,How do you optimize a slow web page? Name at least 5 frontend and 3 backend optimizations.
+Lognormal Analytics,Full Stack Developer,Full Stack,React / REST / SSR / Performance / Testing,Technical Round,"What testing strategies do you use? Explain unit, integration, and end-to-end testing."
+Lognormal Analytics,Data Scientist,Machine Learning,Supervised / Unsupervised / Model Evaluation / Regularization,Technical Round,"Explain the difference between supervised, unsupervised, and reinforcement learning with examples."
+Lognormal Analytics,Data Scientist,Machine Learning,Supervised / Unsupervised / Model Evaluation / Regularization,Technical Round,What is the difference between a data analyst and a data scientist?
+Lognormal Analytics,Data Scientist,Machine Learning,Supervised / Unsupervised / Model Evaluation / Regularization,Technical Round,Explain logistic regression. How is it different from linear regression?
+Lognormal Analytics,Data Scientist,Machine Learning,Supervised / Unsupervised / Model Evaluation / Regularization,Technical Round,What is a decision tree? Explain Gini impurity vs information gain for node splits.
+Lognormal Analytics,Data Scientist,Machine Learning,Supervised / Unsupervised / Model Evaluation / Regularization,Technical Round,What is Random Forest? How does bagging reduce variance compared to a single tree?
+Lognormal Analytics,Data Scientist,Machine Learning,Supervised / Unsupervised / Model Evaluation / Regularization,Technical Round,What is gradient boosting? Explain how XGBoost/LightGBM improves on traditional boosting.
+Lognormal Analytics,Data Scientist,Machine Learning,Supervised / Unsupervised / Model Evaluation / Regularization,Technical Round,Explain cross-validation. Why is k-fold CV better than a single train/test split for small datasets?
+Lognormal Analytics,Data Scientist,Machine Learning,Supervised / Unsupervised / Model Evaluation / Regularization,Technical Round,What is feature engineering? Give 3 examples of features you'd engineer from a raw timestamp column.
+Lognormal Analytics,Data Scientist,Machine Learning,Supervised / Unsupervised / Model Evaluation / Regularization,Technical Round,How do you handle class imbalance in a binary classification problem?
+Lognormal Analytics,Data Scientist,Machine Learning,Supervised / Unsupervised / Model Evaluation / Regularization,Technical Round,What is the ROC-AUC curve? How does it differ from accuracy as an evaluation metric?
+Lognormal Analytics,Data Scientist,Machine Learning,Supervised / Unsupervised / Model Evaluation / Regularization,Technical Round,What is collaborative filtering? How does a recommendation system work?
+Lognormal Analytics,Data Scientist,Machine Learning,Supervised / Unsupervised / Model Evaluation / Regularization,Technical Round,What is a Markov chain? Give an example of how it can be used in data science.
+Lognormal Analytics,Data Scientist,Machine Learning,Supervised / Unsupervised / Model Evaluation / Regularization,Technical Round,Explain what overfitting is and list 5 techniques to prevent it.
+Lognormal Analytics,Data Scientist,Machine Learning,Supervised / Unsupervised / Model Evaluation / Regularization,Technical Round,Explain the bias-variance tradeoff. How does increasing model complexity affect each?
+Lognormal Analytics,Data Scientist,Machine Learning,Supervised / Unsupervised / Model Evaluation / Regularization,Technical Round,What is regularization? Explain L1 (Lasso) and L2 (Ridge) and when to use each.
+Lognormal Analytics,Data Scientist,Machine Learning,Supervised / Unsupervised / Model Evaluation / Regularization,Technical Round,You are building a churn prediction model. Describe your end-to-end approach.
+Lognormal Analytics,Data Scientist,Machine Learning,Supervised / Unsupervised / Model Evaluation / Regularization,Technical Round,How do you deploy a trained ML model to production? What challenges arise post-deployment?
+ZeOmega,Backend Developer,Python,Python Fundamentals / OOP / MCQ Concepts,Online Test,"What is the output of: list1 = [1,2,3]; list2 = list1; list2.append(4); print(list1)?"
+ZeOmega,Backend Developer,Python,Python Fundamentals / OOP / MCQ Concepts,Online Test,What is the difference between a shallow copy and a deep copy in Python?
+ZeOmega,Backend Developer,Python,Python Fundamentals / OOP / MCQ Concepts,Online Test,What does the @staticmethod decorator do? How is it different from @classmethod?
+ZeOmega,Backend Developer,Python,Python Fundamentals / OOP / MCQ Concepts,Online Test,What is a lambda function? Write a lambda to sort a list of tuples by the second element.
+ZeOmega,Backend Developer,Python,Python Fundamentals / OOP / MCQ Concepts,Online Test,What is the difference between __init__ and __new__ in Python classes?
+ZeOmega,Backend Developer,Python,Python Fundamentals / OOP / MCQ Concepts,Online Test,How does Python's garbage collector work? What is reference counting?
+ZeOmega,Backend Developer,Python,Python Fundamentals / OOP / MCQ Concepts,Online Test,What is the difference between *args and **kwargs? Give a function that uses both.
+ZeOmega,Backend Developer,Python,Python Fundamentals / OOP / MCQ Concepts,Online Test,What does yield do in a function? How is a generator different from returning a list?
+ZeOmega,Backend Developer,Python,Python Fundamentals / OOP / MCQ Concepts,Online Test,"What is a dictionary comprehension? Write one to create {1:1, 2:4, 3:9, 4:16, 5:25}."
+ZeOmega,Backend Developer,Python,Python Fundamentals / OOP / MCQ Concepts,Online Test,What is the difference between is and == in Python? Give an example where they behave differently.
+ZeOmega,Backend Developer,JavaScript,JS Fundamentals / Async / Closures,Online Test,"What is the difference between var, let, and const in JavaScript? Explain hoisting."
+ZeOmega,Backend Developer,JavaScript,JS Fundamentals / Async / Closures,Online Test,What is a Promise? How does async/await improve on callbacks and .then() chaining?
+ZeOmega,Backend Developer,JavaScript,JS Fundamentals / Async / Closures,Online Test,Explain event bubbling and event capturing in JavaScript.
+ZeOmega,Backend Developer,JavaScript,JS Fundamentals / Async / Closures,Online Test,What is the difference between == and === in JavaScript?
+ZeOmega,Backend Developer,JavaScript,JS Fundamentals / Async / Closures,Online Test,What is closure in JavaScript? Give an example of a closure that retains state.
+ZeOmega,Backend Developer,SQL,Aggregation / Pivot,Online Test,"Given employees (emp_id, name, salary, dept_id), find the highest-paid employee in each department."
+ZeOmega,Backend Developer,SQL,Aggregation / Pivot,Online Test,"Given student scores (student_id, subject, score), pivot the data to show Math, Science, English in separate columns."
+ZeOmega,Backend Developer,Python,Coding Problem,Online Test,"Write a Python function to sort space-separated numbers in ascending order by digit sum. E.g., '4444 102 306 508' → ordered by digit sum."
+ZeOmega,Backend Developer,Python,Coding Problem,Online Test,"Given N integers, split into maximum chunks where max(chunk[i]) < min(chunk[i+1]). Return the count of chunks."
+ZeOmega,Backend Developer,Python / Backend / Security,SQLAlchemy / ORM / Auth / Security Concepts,Technical Discussion,"Walk me through your current project: architecture, tech stack, and major challenges you solved."
+ZeOmega,Backend Developer,Python / Backend / Security,SQLAlchemy / ORM / Auth / Security Concepts,Technical Discussion,What is SQLAlchemy? How does it compare to raw SQL with sqlite3? Show how you'd define a Users model.
+ZeOmega,Backend Developer,Python / Backend / Security,SQLAlchemy / ORM / Auth / Security Concepts,Technical Discussion,How do you perform a bulk insert in SQLAlchemy efficiently? Difference between bulk_insert_mappings and session.add_all.
+ZeOmega,Backend Developer,Python / Backend / Security,SQLAlchemy / ORM / Auth / Security Concepts,Technical Discussion,How does SQLAlchemy handle lazy vs eager loading? What is the N+1 problem in ORM contexts?
+ZeOmega,Backend Developer,Python / Backend / Security,SQLAlchemy / ORM / Auth / Security Concepts,Technical Discussion,What is cyclomatic complexity? Calculate it for a function with 3 if-else branches and 2 loops.
+ZeOmega,Backend Developer,Python / Backend / Security,SQLAlchemy / ORM / Auth / Security Concepts,Technical Discussion,What is XSS? Give a realistic example and explain how to prevent it in a Python web app.
+ZeOmega,Backend Developer,Python / Backend / Security,SQLAlchemy / ORM / Auth / Security Concepts,Technical Discussion,What is SQL injection? Show a vulnerable Python code snippet and the corrected parameterized version.
+ZeOmega,Backend Developer,Python / Backend / Security,SQLAlchemy / ORM / Auth / Security Concepts,Technical Discussion,Explain CSRF. How do you implement CSRF protection in a Django or Flask application?
+ZeOmega,Backend Developer,Python / Backend / Security,SQLAlchemy / ORM / Auth / Security Concepts,Technical Discussion,What is the difference between a session and a token (JWT) in web authentication?
+ZeOmega,Backend Developer,Python / Backend / Security,SQLAlchemy / ORM / Auth / Security Concepts,Technical Discussion,How do you manage database schema migrations in a Python project? Explain Alembic revision commands.
+ZeOmega,Backend Developer,Python / Backend / Security,SQLAlchemy / ORM / Auth / Security Concepts,Technical Discussion,What are Python's context managers? Write a custom one using __enter__ and __exit__.
+ZeOmega,Backend Developer,Python / Backend / Security,SQLAlchemy / ORM / Auth / Security Concepts,Technical Discussion,Explain Python's asyncio. When would you use async def and await over regular threading?
+ZeOmega,Backend Developer,Behavioral,Situational / Cultural Fit,Managerial / HR Round,Why are you interested in ZeOmega? What do you know about the Jiva healthcare platform?
+ZeOmega,Backend Developer,Behavioral,Situational / Cultural Fit,Managerial / HR Round,Describe a situation where you had to quickly learn a new technology for a project.
+ZeOmega,Backend Developer,Behavioral,Situational / Cultural Fit,Managerial / HR Round,Tell me about a time your code caused a production issue. How did you handle it and what did you learn?
+ZeOmega,Backend Developer,Behavioral,Situational / Cultural Fit,Managerial / HR Round,Where do you see yourself in 3 years?
+Cure.fit,Data Analyst,SQL,Health/Fitness Domain KPIs / Aggregation / Window Functions,Technical Round 1,Write a query to find all members who booked at least 3 fitness classes in the last 30 days.
+Cure.fit,Data Analyst,SQL,Health/Fitness Domain KPIs / Aggregation / Window Functions,Technical Round 1,Calculate the monthly churn rate: % of members active last month who did not book a class this month.
+Cure.fit,Data Analyst,SQL,Health/Fitness Domain KPIs / Aggregation / Window Functions,Technical Round 1,Write a query to find the most popular fitness class by booking count in each city.
+Cure.fit,Data Analyst,SQL,Health/Fitness Domain KPIs / Aggregation / Window Functions,Technical Round 1,Write a query to extrapolate next month's revenue from the last 3 months of booking data.
+Cure.fit,Data Analyst,SQL,Health/Fitness Domain KPIs / Aggregation / Window Functions,Technical Round 1,Find members active for 6+ months but with no booking in the last 30 days — at-risk segment.
+Cure.fit,Data Analyst,SQL,Health/Fitness Domain KPIs / Aggregation / Window Functions,Technical Round 1,Write a query to calculate conversion rate from free trial to paid membership.
+Cure.fit,Data Analyst,SQL,Health/Fitness Domain KPIs / Aggregation / Window Functions,Technical Round 1,"Write a query to find the average session duration per workout type, excluding outliers (>3 std devs above mean)."
+Cure.fit,Data Analyst,SQL,Health/Fitness Domain KPIs / Aggregation / Window Functions,Technical Round 1,"Rank instructors by average member rating using tables: members, bookings, classes, instructors."
+Cure.fit,Data Analyst,SQL,Health/Fitness Domain KPIs / Aggregation / Window Functions,Technical Round 1,Write a query to calculate Weekly Active Users (WAU) and Monthly Active Users (MAU). What is the DAU/MAU ratio?
+Cure.fit,Data Analyst,SQL,Health/Fitness Domain KPIs / Aggregation / Window Functions,Technical Round 1,Write a query to identify members who booked a class within 24 hours of signing up (quick activation cohort).
+Cure.fit,Data Analyst,Python,EDA / Pandas / Visualization / Statistical Coding,Technical Round 2,"Perform a full EDA on a Cure.fit member activity CSV: missing values, distributions, outliers, correlation."
+Cure.fit,Data Analyst,Python,EDA / Pandas / Visualization / Statistical Coding,Technical Round 2,"Write Python code to segment members into 3 groups: High (>8 bookings/month), Medium (3-8), Low (<3)."
+Cure.fit,Data Analyst,Python,EDA / Pandas / Visualization / Statistical Coding,Technical Round 2,"Write a function to calculate 30-day, 60-day, and 90-day retention rate from a user_events DataFrame."
+Cure.fit,Data Analyst,Python,EDA / Pandas / Visualization / Statistical Coding,Technical Round 2,"A dataset has: member age, gender, city, plan type, classes attended. Write Python code to find which features correlate most with high attendance."
+Cure.fit,Data Analyst,Python,EDA / Pandas / Visualization / Statistical Coding,Technical Round 2,Write a matplotlib/seaborn plot to visualize weekly booking trends over 6 months with an anomaly highlighted.
+Cure.fit,Data Analyst,Python,EDA / Pandas / Visualization / Statistical Coding,Technical Round 2,Merge two DataFrames (members and bookings) on member_id and find members with zero bookings.
+Cure.fit,Data Analyst,Python,EDA / Pandas / Visualization / Statistical Coding,Technical Round 2,Write Python code to detect if a spike in bookings on a specific date is statistically significant vs the prior 4-week average.
+Cure.fit,Data Analyst,Python,EDA / Pandas / Visualization / Statistical Coding,Technical Round 2,Write a function that takes a DataFrame of member sessions and returns the average days between consecutive bookings per member.
+Cure.fit,Data Analyst,Business Case / Guesstimate,Domain KPIs / Estimation / Root Cause / Experimental Design,Case Study Round,How would you estimate Cult.fit's total revenue for next month? Walk through your assumptions step by step.
+Cure.fit,Data Analyst,Business Case / Guesstimate,Domain KPIs / Estimation / Root Cause / Experimental Design,Case Study Round,Swiggy is experiencing delivery delays. How would you analyze the root cause as a data analyst? What data would you pull? (Case study — analytical thinking)
+Cure.fit,Data Analyst,Business Case / Guesstimate,Domain KPIs / Estimation / Root Cause / Experimental Design,Case Study Round,How many gym members does Cure.fit have in Bengaluru? Estimate from first principles.
+Cure.fit,Data Analyst,Business Case / Guesstimate,Domain KPIs / Estimation / Root Cause / Experimental Design,Case Study Round,Cure.fit launches a new outdoor run class. How would you measure its success after 30 days?
+Cure.fit,Data Analyst,Business Case / Guesstimate,Domain KPIs / Estimation / Root Cause / Experimental Design,Case Study Round,A new competitor enters the fitness market. How would you use Cure.fit's data to defend market share?
+Cure.fit,Data Analyst,Business Case / Guesstimate,Domain KPIs / Estimation / Root Cause / Experimental Design,Case Study Round,The number of class bookings dropped 25% last Tuesday. How do you diagnose this?
+Cure.fit,Data Analyst,Business Case / Guesstimate,Domain KPIs / Estimation / Root Cause / Experimental Design,Case Study Round,How would you identify which instructors are most likely to cause member churn if they leave?
+Cure.fit,Data Analyst,Business Case / Guesstimate,Domain KPIs / Estimation / Root Cause / Experimental Design,Case Study Round,Design a dashboard for Cure.fit's operations team. What KPIs would you include and why?
+Cure.fit,Data Analyst,Business Case / Guesstimate,Domain KPIs / Estimation / Root Cause / Experimental Design,Case Study Round,What is the LTV (Lifetime Value) of a Cult.fit member? How would you calculate it from available data?
+Cure.fit,Data Analyst,Business Case / Guesstimate,Domain KPIs / Estimation / Root Cause / Experimental Design,Case Study Round,How would you design a data-driven loyalty/rewards program for Cult.fit?
+Cure.fit,Data Analyst,Business Case / Guesstimate,Domain KPIs / Estimation / Root Cause / Experimental Design,Case Study Round,"How would you use A/B testing to evaluate whether a new workout type increases bookings? Define hypothesis, metrics, and success criteria."
+Cure.fit,Data Analyst,Business Case / Guesstimate,Domain KPIs / Estimation / Root Cause / Experimental Design,Case Study Round,"Describe how you'd approach building a churn prediction model for Cure.fit: what features, which model, and how would you evaluate it?"
+Cure.fit,Data Analyst,Behavioral,Situational / Cultural Fit,Culture Fit Round,Why do you want to work at Cure.fit / Cult.fit? How does health-tech align with your interests?
+Cure.fit,Data Analyst,Behavioral,Situational / Cultural Fit,Culture Fit Round,Describe a time you used data to challenge a belief held by your team or manager.
+Cure.fit,Data Analyst,Behavioral,Situational / Cultural Fit,Culture Fit Round,How do you handle disagreements with a product manager about which metrics to prioritize?
+Cure.fit,Data Analyst,Behavioral,Situational / Cultural Fit,Culture Fit Round,Tell me about a project where you delivered insights under a tight deadline.
+Cure.fit,Data Analyst,Behavioral,Situational / Cultural Fit,Culture Fit Round,What does 'being data-driven' mean to you? Give an example where data overruled intuition.
