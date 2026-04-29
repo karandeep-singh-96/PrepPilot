@@ -29,6 +29,88 @@ function sanitizeDifficulty(d: string): 'Easy' | 'Medium' | 'Hard' {
   return 'Medium'
 }
 
+// Agent 1: Search and extract raw questions from the web
+async function scrapeQuestions(company: string, roleName: string): Promise<string> {
+  const scraper = genAI.getGenerativeModel({
+    model: 'gemini-2.5-flash',
+    tools: [{ googleSearch: {} }] as any,
+    systemInstruction: `You are an interview research agent. Your only job is to search the web and extract real interview questions that actual candidates reported being asked at specific companies. Search Glassdoor, AmbitionBox, LeetCode Discuss, GeeksForGeeks, LinkedIn, and Naukri interview experiences. Focus on posts from 2022 onwards. Extract questions verbatim as candidates reported them — never fabricate or generalise. If a question is incomplete or cut off, note it as-is.`,
+  })
+
+  const prompt = `Search for real interview questions asked at ${company} for the ${roleName} role.
+
+Search specifically for:
+- "${company} ${roleName} interview experience"
+- "${company} data analyst interview questions glassdoor"
+- "${company} interview questions ambitionbox"
+- site:glassdoor.com "${company}" interview
+- site:ambitionbox.com "${company}" interview
+
+Extract every specific question you find that was actually asked. Include:
+- Technical questions: SQL, Python, statistics, case studies, data modelling, Excel, Power BI, dashboards
+- Behavioral questions: situational, leadership, conflict, teamwork
+- Introduction questions: tell me about yourself, walk me through your resume
+
+For each question return a JSON object:
+- question_text: exact question as reported (must be a complete, answerable question)
+- topic: broad topic (SQL, Python, Statistics, Behavioural, Case Study, System Design, etc.)
+- sub_topic: specific area
+- difficulty: Easy / Medium / Hard
+- round_type: technical / behavioral / intro
+- source_hint: where you found it (e.g. "Glassdoor review", "AmbitionBox experience")
+
+If you find fewer than 5 real questions for ${company} ${roleName}, respond with exactly: NOT_FOUND
+
+Otherwise return only a JSON array, no other text.`
+
+  const result = await scraper.generateContent(prompt)
+  return result.response.text()
+}
+
+// Agent 2: Validate and filter questions for quality and relevance
+async function validateQuestions(
+  rawQuestions: any[],
+  company: string,
+  roleName: string
+): Promise<any[]> {
+  const validator = genAI.getGenerativeModel({
+    model: 'gemini-2.5-flash',
+    systemInstruction: `You are a quality control agent for interview question banks. You review questions scraped from the web and ensure only high-quality, relevant, complete questions are published to candidates. You are strict — a candidate's interview prep depends on the quality of what you approve.`,
+  })
+
+  const prompt = `You are reviewing interview questions scraped from the web for ${company} — ${roleName} role.
+
+Here are the raw scraped questions:
+${JSON.stringify(rawQuestions, null, 2)}
+
+Review each question and REJECT it if any of the following are true:
+- The question is incomplete or cut off mid-sentence
+- The question is too vague to be answerable (e.g. "Tell me about SQL" is not a question)
+- The question is clearly not relevant to the ${roleName} role at ${company}
+- The question is a generic filler not specific to an interview (e.g. "What is your name?")
+- The question is a duplicate of another in the list
+- The question text is actually a topic heading, not a question
+
+For CODING and TECHNICAL questions specifically, also check:
+- Is the problem statement complete? A good coding question must clearly describe: what the input is, what the output should be, and what the candidate is expected to do
+- Is it a real algorithmic/technical problem — not just "explain what a JOIN is" (that's a concept question, not a coding question — change round_type to technical but don't treat it as coding)
+- Is it solvable? Reject questions that are too ambiguous to have a clear answer
+- Is it relevant to the role? For Data Analyst: SQL queries, Python for data, statistics problems, data modelling scenarios. For SDE: DSA, algorithms, system design, OOP
+- If a coding question is mostly complete but missing minor context (e.g. missing constraints or example), rewrite it to add the missing parts while preserving the original problem
+
+For questions that are ALMOST good but slightly incomplete or unclear — rewrite them to be complete and specific while keeping the original intent.
+
+After filtering and fixing, return the best 20 questions (or fewer if not enough pass quality check).
+
+Return ONLY a JSON array with the same fields: question_text, topic, sub_topic, difficulty, round_type.
+No other text before or after the array.
+
+If fewer than 5 questions pass quality check, respond with exactly: INSUFFICIENT_QUALITY`
+
+  const result = await validator.generateContent(prompt)
+  return extractJSON(result.response.text())
+}
+
 export async function POST(request: Request) {
   const { company, role } = await request.json()
 
@@ -36,12 +118,10 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Company and role are required' }, { status: 400 })
   }
 
-  // Get authenticated user
   const authClient = await createServerClient()
   const { data: { user } } = await authClient.auth.getUser()
   if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
-  // Service role client for writes
   const supabase = createClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.SUPABASE_SERVICE_ROLE_KEY!
@@ -50,7 +130,7 @@ export async function POST(request: Request) {
   const companySlug = slugify(company.trim())
   const roleSlug = role === 'SDE' ? 'sde' : 'data_analyst'
 
-  // If company+role already has questions, just record the discovery and redirect
+  // If company+role already has questions, redirect immediately
   const { data: existingCompany } = await supabase
     .from('companies')
     .select('id')
@@ -82,64 +162,55 @@ export async function POST(request: Request) {
     }
   }
 
-  // Call Gemini with Google Search grounding
-  const model = genAI.getGenerativeModel({
-    model: 'gemini-2.5-flash',
-    tools: [{ googleSearch: {} }] as any,
-    systemInstruction: `You are an interview research agent. Search the web and find real interview questions that candidates have been asked at specific companies for specific roles. Search across Glassdoor, LeetCode Discuss, GeeksForGeeks, LinkedIn, AmbitionBox, and similar platforms. Focus on experiences from 2022 onwards. Return only real questions reported by actual candidates — do not fabricate or generalize questions.`,
-  })
-
   const roleName = role === 'SDE' ? 'Software Development Engineer (SDE)' : 'Data Analyst'
 
-  const prompt = `Search for real interview questions asked at ${company.trim()} for the ${roleName} role.
-
-Find interview experiences from Glassdoor, LeetCode Discuss, GeeksForGeeks, AmbitionBox, LinkedIn, and similar platforms.
-
-Extract the top 20 most commonly asked or most representative questions. Include a mix of:
-- Technical questions (coding, DSA, SQL, system design)
-- Behavioral questions (situational, culture fit)
-- Introduction questions (tell me about yourself, career goals)
-
-For each question return a JSON object with these exact fields:
-- question_text: the exact question as reported by candidates
-- topic: broad topic (e.g. Arrays, Dynamic Programming, SQL, Behavioural, System Design)
-- sub_topic: specific area (e.g. Two Pointers, Window Functions, Leadership)
-- difficulty: exactly one of Easy / Medium / Hard
-- round_type: exactly one of technical / behavioral / intro
-
-If you cannot find real interview questions for ${company.trim()} ${roleName} respond with exactly: NOT_FOUND
-
-Otherwise return a JSON array only, with no other text before or after.`
-
-  let text = ''
+  // Agent 1: Scrape
+  let rawText = ''
   try {
-    const result = await model.generateContent(prompt)
-    text = result.response.text()
+    rawText = await scrapeQuestions(company.trim(), roleName)
   } catch (err) {
-    console.error('Gemini error:', err)
+    console.error('Scraper agent error:', err)
     return NextResponse.json({
       error: 'not_found',
-      message: `We couldn't find interview questions for ${company.trim()}. This company may not have enough publicly reported interview experiences yet.`,
+      message: `We couldn't find interview questions for ${company.trim()}. Try again or check the company name.`,
     }, { status: 404 })
   }
 
-  if (text.trim().startsWith('NOT_FOUND') || !text.includes('[')) {
+  if (rawText.trim().startsWith('NOT_FOUND') || !rawText.includes('[')) {
     return NextResponse.json({
       error: 'not_found',
-      message: `We couldn't find interview questions for ${company.trim()}. This company may not have enough publicly reported interview experiences yet.`,
+      message: `We couldn't find enough interview experiences for ${company.trim()} — ${roleName}. This company may not have enough publicly reported interviews yet.`,
     }, { status: 404 })
   }
 
-  const questions = extractJSON(text)
-
-  if (questions.length === 0) {
+  const rawQuestions = extractJSON(rawText)
+  if (rawQuestions.length === 0) {
     return NextResponse.json({
       error: 'not_found',
-      message: `We couldn't find interview questions for ${company.trim()}. This company may not have enough publicly reported interview experiences yet.`,
+      message: `We couldn't find enough interview experiences for ${company.trim()} — ${roleName}.`,
     }, { status: 404 })
   }
 
-  // Upsert company and role
+  // Agent 2: Validate
+  let validatedQuestions: any[] = []
+  try {
+    validatedQuestions = await validateQuestions(rawQuestions, company.trim(), roleName)
+  } catch (err) {
+    console.error('Validator agent error:', err)
+    return NextResponse.json({
+      error: 'not_found',
+      message: `We found some questions but couldn't verify their quality. Please try again.`,
+    }, { status: 404 })
+  }
+
+  if (validatedQuestions.length < 5) {
+    return NextResponse.json({
+      error: 'not_found',
+      message: `We found interview experiences for ${company.trim()} but the questions didn't meet our quality standard. Try again or check back later.`,
+    }, { status: 404 })
+  }
+
+  // Save to DB
   const { data: companyData } = await supabase
     .from('companies')
     .upsert({ name: company.trim(), slug: companySlug }, { onConflict: 'slug' })
@@ -157,7 +228,7 @@ Otherwise return a JSON array only, with no other text before or after.`
     return NextResponse.json({ error: 'Failed to save' }, { status: 500 })
   }
 
-  const questionsToInsert = questions.map((q: any) => ({
+  const questionsToInsert = validatedQuestions.map((q: any) => ({
     company_id: companyData.id,
     role_id: roleData.id,
     round_type: sanitizeRoundType(q.round_type),
@@ -174,7 +245,6 @@ Otherwise return a JSON array only, with no other text before or after.`
     return NextResponse.json({ error: 'Failed to save questions' }, { status: 500 })
   }
 
-  // Record this discovery for the user
   await supabase.from('user_discoveries').upsert({
     user_id: user.id,
     company_id: companyData.id,

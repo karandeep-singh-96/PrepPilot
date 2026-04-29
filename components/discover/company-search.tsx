@@ -7,9 +7,10 @@ import { Input } from '@/components/ui/input'
 import { Search, Loader2, AlertCircle } from 'lucide-react'
 
 const SEARCH_MESSAGES = [
-  'Searching Glassdoor, LeetCode, GeeksForGeeks...',
+  'Searching Glassdoor, AmbitionBox, LeetCode...',
   'Reading interview experiences...',
-  'Curating top questions with AI...',
+  'Extracting questions from reports...',
+  'Validating quality and relevance...',
   'Almost there...',
 ]
 
